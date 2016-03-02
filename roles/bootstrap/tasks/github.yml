@@ -2,7 +2,15 @@
   become: yes
   apt: name=git state=present
 
-- name: Add github.com as know host
+- name: Configure git email
+  become: yes
+  command: git config --global user.email "deploy@tableflip.io"
+
+- name: Configure git name
+  become: yes
+  command: git config --global user.name "TABLEFLIP"
+
+- name: Add github.com as known host
   become: yes
   lineinfile:
     state: present
