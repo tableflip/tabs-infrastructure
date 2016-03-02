@@ -12,6 +12,13 @@
   notify:
     - Restart {{service}}
 
+- name: Copy config
+  become: yes
+  become_user: "{{user}}"
+  template: src=.builderrc dest=/home/{{user}}/{{service}}/.builderrc
+  notify:
+    - Restart {{service}}
+
 - name: Copy Upstart config
   become: yes
   template: src=upstart/upstart.conf dest=/etc/init/{{service}}.conf mode=0644 force=yes
