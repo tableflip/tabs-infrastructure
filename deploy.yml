@@ -1,7 +1,7 @@
 # deploy.yml
 # - Assumes you have run bootstrap.yml to install pre-requists.
-- hosts: builder
+- hosts: tabs
   gather_facts: no
   roles:
     - apt-update
-    - builder
+    - tabs

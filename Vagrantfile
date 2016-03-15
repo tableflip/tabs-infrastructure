@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 
   # Setup the primary "app", that'll be the prod system.
   config.vm.define "app", primary: true do |app|
-    app.vm.hostname = "dev.builder.tableflip.io"
+    app.vm.hostname = "dev.tabs.tableflip.io"
     app.vm.network "private_network", ip: "10.100.106.100"
     app.vm.provision "ansible" do |ansible|
       ansible.inventory_path = "dev/inventory"

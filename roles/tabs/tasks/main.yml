@@ -15,7 +15,7 @@
 - name: Copy config
   become: yes
   become_user: "{{user}}"
-  template: src=.builderrc dest=/home/{{user}}/{{service}}/.builderrc
+  template: src=.tabsrc dest=/home/{{user}}/{{service}}/.tabsrc
   notify:
     - Restart {{service}}
 

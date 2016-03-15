@@ -5,12 +5,12 @@
 - name: Configure git email
   become: yes
   become_user: "{{user}}"
-  command: git config --global user.email "deploy@tableflip.io"
+  command: git config --global user.email "tabs@tableflip.io"
 
 - name: Configure git name
   become: yes
   become_user: "{{user}}"
-  command: git config --global user.name "TABLEFLIP"
+  command: git config --global user.name "TABS"
 
 - name: Add github.com as known host
   become: yes
