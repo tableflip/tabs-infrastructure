@@ -1,6 +1,6 @@
-# Builder infrastructure
+# TABS infrastructure
 
-**Ansible scripts for deploying the Builder**
+**Ansible scripts for deploying TABS**
 
 ```sh
 ├── Vagrantfile        # Test the scripts locally with `vagrant up`
@@ -74,7 +74,7 @@ Drop it into the `group_vars/all/` dir, and your good to go.
 - Install vagrant (`brew install vagrant`)
 - Add to your local `/etc/hosts`:
 ```
-10.100.106.100	dev.builder.tableflip.io
+10.100.106.100	dev.tabs.tableflip.io
 ```
 
 ```sh

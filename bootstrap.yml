@@ -1,4 +1,4 @@
-- hosts: builder
+- hosts: tabs
   roles:
     - apt-update
     - bootstrap
